@@ -6,7 +6,8 @@ int main()
 
     char decision2;
 
-    do {
+    do
+    {
         double var1, var2;
         char decision;
 
@@ -26,23 +27,23 @@ int main()
 
         switch (decision)
         {
-            case '+':
-                cout << var1 << " + " << var2 << " = " << (var1 + var2) << endl;
-                break;
-            case '-':
-                cout << var1 << " - " << var2 << " = " << (var1 - var2) << endl;
-                break;
-            case '*':
-                cout << var1 << " * " << var2 << " = " << (var1 * var2) << endl;
-                break;
-            case '/':
-                if (var2 != 0)
-                    cout << var1 << " / " << var2 << " = " << (var1 / var2) << endl;
-                else
-                    cout << "You can't divide by 0" << endl;
-                break;
-            default:
-                cout << "You typed wrong character";
+        case '+':
+            cout << var1 << " + " << var2 << " = " << (var1 + var2) << endl;
+            break;
+        case '-':
+            cout << var1 << " - " << var2 << " = " << (var1 - var2) << endl;
+            break;
+        case '*':
+            cout << var1 << " * " << var2 << " = " << (var1 * var2) << endl;
+            break;
+        case '/':
+            if (var2 != 0)
+                cout << var1 << " / " << var2 << " = " << (var1 / var2) << endl;
+            else
+                cout << "You can't divide by 0" << endl;
+            break;
+        default:
+            cout << "You typed wrong character";
         }
 
         cout << "Do you want to continue that program? (Y/N)" << endl;
